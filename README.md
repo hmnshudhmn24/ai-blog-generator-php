@@ -13,14 +13,20 @@ The AI-Powered Blog Generator is a PHP-based web application that lets users gen
 
 ### 1. Database Setup
 ```sql
+-- Step 1: Create the database
 CREATE DATABASE ai_blog_generator;
+
+-- Step 2: Select the database
 USE ai_blog_generator;
+
+-- Step 3: Create the blogs table
 CREATE TABLE blogs (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  topic VARCHAR(255) NOT NULL,
-  content TEXT NOT NULL,
-  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    topic VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
 ```
 
 ### 2. Configure
